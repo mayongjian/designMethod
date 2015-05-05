@@ -14,10 +14,12 @@ class Factory
 				{
 						case '+':
 							operation = new OperationAdd(); 
+							break;
 						case '-':
 							operation =  new OperationSub();
+							break;
 				}
 				return operation;
 		}
-}
+};
 

@@ -20,4 +20,26 @@ class  Operation
 			virtual int getResult()=0;
 };
 
+class OperationAdd : public Operation
+{
+	public:
+			OperationAdd() {}
+
+			int getResult()
+			{
+					return  getNumA() +  getNumB();
+			}
+};
+
+
+class OperationSub : public Operation
+{
+	public:
+			OperationSub() {}
+
+			int getResult()
+			{
+					return getNumA() - getNumB();
+			}
+};
 #endif

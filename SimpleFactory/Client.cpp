@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	Operation * op = Factory.createOperation('+');
+	Operation * op = Factory::createOperation('+');
 	if( !op ) return 1;
 	
 	op->setNumA(1);
